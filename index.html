@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ecrinime Özel ❤️</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ background:#071329;
+ color:#eef3ff;
+ font-family:Georgia,serif;
+ text-align:center;
+}
+.heart{color:#ff91b9}
+#login{
+ min-height:100vh;
+ display:flex;
+ flex-direction:column;
+ justify-content:center;
+ align-items:center;
+ padding:25px;
+}
+.bigheart{font-size:85px;animation:pulse 1.5s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+input{
+ background:#13284b;
+ color:white;
+ border:1px solid #829ac5;
+ border-radius:15px;
+ padding:15px;
+ text-align:center;
+ font-size:18px;
+ width:240px;
+ margin:15px;
+}
+button{
+ background:#203b69;
+ color:white;
+ border:1px solid #7896c5;
+ padding:13px 24px;
+ border-radius:25px;
+ font-size:16px;
+ cursor:pointer;
+}
+#wrong{color:#ff91b9}
+#site{display:none}
+header{padding:65px 20px 35px}
+h1{color:#c5d8ff;font-size:27px}
+h2{color:#c5d8ff}
+.scroll{color:#a9c1ed;margin-top:35px;animation:down 1.5s infinite}
+@keyframes down{50%{transform:translateY(9px)}}
+section{padding:55px 23px;max-width:700px;margin:auto}
+.card{
+ background:#102344;
+ border:1px solid #304b75;
+ border-radius:22px;
+ padding:28px 22px;
+ margin:25px 0;
+ line-height:2;
+ box-shadow:0 8px 25px #020a19;
+}
+.message{font-size:19px;line-height:2}
+.music{padding:35px 20px}
+footer{padding:35px;color:#9db4dd}
+</style>
+</head>
+<body>
+
+<div id="login">
+ <div class="bigheart">💙</div>
+ <h2>Şifre gir güzelim</h2>
+ <input id="pass" type="password" placeholder="Şifremiz...">
+ <button onclick="enter()">Kalbime gir ❤️</button>
+ <p id="wrong"></p>
+</div>
+
+<div id="site">
+<header>
+ <div style="font-size:35px">💙✨💙</div>
+ <h1>Temayı en sevdiğimiz renk olarak seçtim özellikle güzelim ❤️</h1>
+ <p style="color:#a9c1ed">Senin için, sadece sana özel...</p>
+ <div class="scroll">Aşağı kaydır ↓</div>
+</header>
+
+<section>
+ <div class="card">
+  <h2>Biricik Ecrinime ❤️</h2>
+  <div class="message">
+   Nereden başlasam bilmiyorum güzelim. Sana olan sevgimi kelimelere dökmek bazen gerçekten çok zor. Çünkü sen benim için sıradan biri değilsin. Hayatıma girdiğinden beri birçok şeyin anlamı değişti. Seninle konuşmak, sesini duymak, senden bir mesaj görmek bile günümü güzelleştirmeye yetiyor.
+
+   <br><br>
+
+   Bazen düşünüyorum da, iyi ki yollarımız kesişmiş. İyi ki seni tanımışım. Hayatın bana verdiği en güzel şeylerden birisin. Seninle geçirdiğim her an benim için çok değerli. Aramızda ne kadar mesafe olursa olsun, kalbimdeki yerin hep aynı.
+
+   <br><br>
+
+   Güzelim, bilmeni istiyorum ki seni sadece güzel günlerde değil, zor günlerde de sevmek istiyorum. Mutlu olduğunda sevincine ortak olmak, üzgün olduğunda yanında olduğunu hissettirmek istiyorum. Her zaman yüzünün gülmesini istiyorum.
+
+   <br><br>
+
+   Seninle kurduğum hayaller, yaptığımız konuşmalar ve birlikte biriktirdiğimiz küçük anılar benim için çok kıymetli. Belki her zaman mükemmel olamayız ama ben seninle her şeyi güzelleştirmek istiyorum.
+
+   <br><br>
+
+   Sana her gün seni sevdiğimi söylemekten asla sıkılmam. Çünkü bunu söylemek benim için hiçbir zaman sıradanlaşmayacak. Sen benim en güzel tesadüfüm, en güzel hikâyemsin.
+
+   <br><br>
+
+   İyi ki varsın Ecrinim. İyi ki hayatımdasın. Seni tarif edebileceğimden çok daha fazla seviyorum. ❤️
+  </div>
+ </div>
+</section>
+
+<section>
+ <div class="card">
+  <div style="font-size:45px">💙</div>
+  <h2>İyi ki seninle tanışmışız</h2>
+  <p class="message">
+   İyki senle tanismisiz herseyim oldun seni herşeyden çok seviyorum bitannemm benim ❤️
+  </p>
+  <div style="font-size:30px">∞ 💙 ∞</div>
+ </div>
+</section>
+
+<section class="music">
+ <div class="card">
+  <div style="font-size:45px">🎵</div>
+  <h2>Ecrinime özel şarkı</h2>
+  <h3>Her Şeyim Oldun</h3>
+  <p style="color:#b4c9ed">Güllü ❤️</p>
+  <p class="message">Seni rüyamda görsem o gün mutlu kalkarım 💙</p>
+  <audio id="music" src="sarki.mp3"></audio>
+  <button onclick="playSong()">❤️ Şarkımızı dinle</button>
+  <p id="status">Sana özel 1 dakika...</p>
+ </div>
+</section>
+
+<footer>
+ Ecrinime, sevgimle hazırlanmıştır. 💙<br>
+ Sonsuza kadar kalbimin en güzel yerinde...
+</footer>
+</div>
+
+<script>
+function enter(){
+ if(document.getElementById('pass').value==='08.11.26'){
+  document.getElementById('login').style.display='none';
+  document.getElementById('site').style.display='block';
+  window.scrollTo(0,0);
+ }else{
+  document.getElementById('wrong').innerText='Şifre yanlış güzelim 💔';
+ }
+}
+let timer;
+function playSong(){
+ const m=document.getElementById('music');
+ m.pause();
+ m.currentTime=0;
+ clearTimeout(timer);
+ m.play().then(()=>{
+  document.getElementById('status').innerText='Senin için çalıyor... 💙';
+  timer=setTimeout(()=>{
+   m.pause();
+   m.currentTime=0;
+   document.getElementById('status').innerText='Sana özel 1 dakika sona erdi ❤️';
+  },60000);
+ }).catch(()=>{
+  document.getElementById('status').innerText='Şarkı dosyasını kontrol et 💙';
+ });
+}
+</script>
+</body>
+</html>
